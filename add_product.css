@@ -1,0 +1,44 @@
+   body { 
+    font-family: Arial;
+     
+      background-image: url(bg.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+h2
+{
+    color:whitesmoke;
+}
+ h3
+ {
+  color:white;
+ }
+ .form-section
+  { 
+      max-width:600px;
+      margin:auto;
+      background:rgb(56, 114, 176);;
+     padding:20px;
+      border-radius:10px;
+     box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+label 
+{
+    display: block; 
+  margin: 8px 0 4px;
+color: white;
+}
+ input
+{ 
+ width: 100%;
+ padding: 8px; 
+margin-bottom: 10px; 
+}
+.btn { 
+background: green;
+color: white;
+padding: 10px 15px;
+border: none; 
+cursor: pointer; 
+}

@@ -1,0 +1,155 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body
+{
+    background-image:url(bg.jpg);
+   background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+  /*min-height: 100vh;*/
+  margin: 0;
+}
+a {
+    text-decoration: none;
+    color:black;
+    font-size:20px;
+
+}
+.wrapper
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.signin-up_box
+{
+    position: relative;
+    width: 450px;
+    background:lightgray;
+    border: 2px solid lightgray;
+    border-radius: 15px;
+    padding: 7.5em  2.5em  4em 2.5em ;
+    color:black;
+    box-shadow: 0px 0px  10x 2px rgba(0,0,0,0.2);  
+}
+.signin-up_header
+{
+    position:absolute;
+    top: 0;
+    left:35%;
+    transform: translateY(-50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(14, 34, 73) ;
+    width: 140px;
+    height: 70px;
+    border-radius: 0 0 20px 20px;
+}
+.signin-up_header span
+{
+    font-size: 30px;
+    color:white;
+}
+
+.input-box
+{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    margin: 10px 0;
+
+}
+
+
+.input-field
+{
+    width: 100%;
+    height: 55px;
+    font-size:16px;
+    background:transparent;
+    color:black;
+    padding-inline:20px 50px;
+    border:2px solid black ;
+    outline: none;
+    border-radius: 30px;
+}
+#user
+{
+    margin-bottom: 10px;
+}
+.label
+{
+    position:absolute;
+    top: 15px;
+    left: 20px;
+    transition: 25;
+    color:black;
+    
+}
+.input-field:focus~.label,
+.input-field:valid~.label
+{
+    position: absolute;
+    top:-10;
+    left: 20px;
+    font-size: 14px;
+    background-color: black;
+    border-radius: 30px;
+    color:white;
+    padding: 0 10px;
+}
+.bx
+{
+    position: absolute;
+    top:18px;
+    right:25px;
+    font-size: 20px;
+}
+.btn
+{
+    width: 100%;
+    height: 50px;
+    background:linear-gradient( to right , rgb(136, 83, 217), rgb(86, 105, 225));
+    font-size: 30px;
+    font:bolder;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: -3s;
+    color:white;
+    transition: transform .2s ease;
+    
+}
+
+.btn:hover
+{
+    background:linear-gradient(to left, rgb(136, 83, 217), rgb(86, 105, 225));
+    border: 3px solid black ;
+    font :bolder;
+}
+.SIGN-UP-IN
+{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+@media only screen and (max-width:564px)
+{
+    .wrapper
+    {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,42 @@
+.pnav {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 40px;
+    margin: 50px;
+    padding: 30px;
+}
+
+.p {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    font-weight: bolder;
+    font-family: Britannic;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+    position: relative; /* So ::after stays aligned */
+}
+
+.p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0; /* keep line under text */
+    width: 100%;
+    height: 2px;
+    background-color: purple;
+    border-radius: 40px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.p:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}

@@ -1,0 +1,57 @@
+body 
+{
+ 
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-image: url(bg.jpg);
+}
+
+
+
+.container
+{
+    max-width:600px;
+    margin:auto;
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+h2
+{
+    text-align:center;
+    margin-bottom:20px;
+}
+label
+{
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+  
+}
+input,select,textarea,button
+{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+button
+{
+    background:#28a745;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:15px;
+}
+button:hover
+{
+    background:#218838;
+}
+.hidden
+{
+    display:none;
+}

@@ -1,0 +1,140 @@
+/* ================================
+   General Reset
+================================ */
+body {
+ background-image:url(bg.jpg);
+   background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ margin: 0%;
+ 
+}
+
+
+/* ================================
+   Swiper Styles
+================================ */
+.swiper {
+  width: 100%;
+  height: 350px;  /* 🔼 Increase height here */
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%; /* ✅ Fill the swiper height */
+  object-fit: cover; /* ✅ fills nicely like Amazon banners */
+  display: block;
+}
+
+/* Responsive Swiper Height */
+@media (max-width: 768px) {
+  .swiper { height: 250px; }
+}
+@media (max-width: 480px) {
+  .swiper { height: 150px; }
+}
+
+/* ================================
+   Navbar
+================================ */
+.pro { text-decoration: none; }
+.topnav { padding: 40px; }
+
+/* ================================
+   Product Section
+================================ */
+/* ================================
+   Product Section (Grid Layout)
+================================ */
+.image-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* ✅ 3 per row on desktop */
+  gap: 30px;
+  padding: 40px 80px;
+  margin: 20px auto;
+}
+
+/* Product Card */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Hover Card */
+.hover-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Product Image */
+.hover-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Content */
+.hover-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(44, 43, 43, 0.85);
+  color: white;
+  padding-left: 15px;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+.card:hover .hover-content {
+  transform: translateY(0%);
+}
+.hover-content h2 { font-size: 16px; margin: 0 0 5px 0; }
+.hover-content a { font-size: 14px; color: pink; }
+
+/* ✅ Tablets: 2 per row */
+@media (max-width: 992px) {
+  .image-row {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    gap: 20px;
+  }
+}
+
+/* ✅ Phones: 1 per row */
+@media (max-width: 600px) {
+  .image-row {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 15px;
+  }
+  .hover-card img {
+    height: 200px;
+  }
+  .hover-content {
+    position: relative;
+    transform: none;  /* always visible */
+    margin-top: 5px;
+  }
+}

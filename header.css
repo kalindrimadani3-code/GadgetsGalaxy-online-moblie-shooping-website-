@@ -1,0 +1,99 @@
+header nav {
+  position: fixed;
+  width:100%;
+  height: 50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:15px 30px;
+/*  background: linear-gradient(to right, rgba(233, 112, 193, 1), rgba(90, 90, 243, 1));*/
+    background-color:#031435 ;
+  z-index: 999;
+  margin: 0;
+  
+}
+.img
+ {
+  height: 50%;
+}
+.title
+{
+  font-size: 28px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:white;
+  white-space: nowrap;  /* break nahi thava de */
+}
+
+.a {
+  color: white;
+  font-size: 28px;
+  margin: 0 50px;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  justify-content:space-around;
+  
+  
+}
+
+.a:hover {
+  
+  transform: scale(1.4);
+  font-size: 35px;
+}
+.bx bxs-phone
+{
+  color: green;
+}
+.bx bxs-heart
+{
+  color: red;
+}
+.bx bxs-cart
+{
+  color:rgb(247, 198, 2)
+}
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  margin-left: 20px;
+}
+
+.user-icon {
+  background-color: #f0f0f0;
+  padding: 8px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin:0 30px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 160px;
+  margin-top: 8px;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
